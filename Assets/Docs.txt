@@ -1,0 +1,22 @@
+-NetworkManager.cs
+classname:NetworkManager
+-login(string uri,string jsondata) <-call this function to login to the server it will return with a json body
+-logout(string token)<-call this to logout the user 
+-getuserbyname(string username,string token) <-call this to get user by username
+-token is reffered to authorization token and not user id token
+-to check for status code call the variable statuscode after executing any of the above functions
+status code will always hold the last called statuscode of previous function called 
+------------------------------------------------------------------------------------------
+playerData.cs
+classname:playerData
+accessors-
+TOKEN holds the user id token
+ACCESSTOKEN holds the user auth token
+PLAYERNAME holds the username 
+---------------------------------------------------------------------------------------------
+utilityscript.cs
+this is a static class so no need to make a new object,methods can be called by directly refrencing it 
+classname:utilityscript 
+GetMacAdress() returns the MAC adress of the current machine this program running on 
+
+
